@@ -108,11 +108,19 @@ body {
 .header-exile :focus {
   color: var(--blue-text--);
 }
+.icon-envelop {
+  align-items: center;
+  margin-right: 5px;
+}
 .header-exile {
   display: flex;
   align-items: center;
   margin-left: auto;
   gap: 40px;
+}
+.icon-phone {
+  align-items: center;
+  margin-right: 5px;
 }
 .header-tel {
   line-height: 1.5;
@@ -129,7 +137,17 @@ body {
   background-color: #2e2f42;
   padding: 188px 0px;
   text-align: center;
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+      right rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/peopleoffice.jpg);
 }
+
 .main-first {
   font-weight: 700;
   font-size: 56px;
@@ -159,9 +177,13 @@ body {
 }
 .button-order:hover {
   background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .button-order:focus {
   background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /*---------стратегія------*/
 .advantages {
@@ -182,6 +204,12 @@ body {
 .main-advantages {
   display: flex;
   gap: 24px;
+}
+.advantages-soc-icon {
+  padding: 24px 102.14px;
+  background: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 .main-index {
   font-weight: 700;
@@ -256,6 +284,69 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--gren-text--);
+  margin-bottom: 8px;
+}
+.people-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.people-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.people-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.people-soc-icon {
+  fill: #f4f4fd;
+}
+.people-soc-link:hover {
+  background-color: #404bbf;
+}
+.people-soc-link:focus {
+  background-color: #404bbf;
+}
+/*--------посилання на компанії-------*/
+.section-company {
+  padding-top: 130px;
+}
+.company {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+.company-svg {
+  width: 168px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.company-svg:hover {
+  border-color: #404bbf;
+}
+.company-svg:focus {
+  border-color: #404bbf;
+}
+.logo-company-icon {
+  fill: #8e8f99;
+}
+.logo-company-icon:hover {
+  fill: #404bbf;
+}
+.logo-company-icon:focus {
+  fill: #404bbf;
 }
 /*---------підвал------*/
 .footer {
@@ -327,10 +418,23 @@ body {
 .portfolio-button:hover {
   background-color: var(--blue-text--);
   color: #e7e9fc;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .portfolio-button:focus {
   background-color: var(--blue-text--);
   color: #e7e9fc;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.portfolio-link {
+  display: block;
+}
+.portfolio-link:hover {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .images {
   display: flex;
@@ -348,7 +452,6 @@ body {
 }
 .images-photo {
   background: #ffffff;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .main-index-portfolio {
   font-weight: 700;
@@ -362,6 +465,43 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--gren-text--);
+}
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+.social {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5px;
+  color: #ffffff;
+}
+.footer-soc {
+  display: flex;
+  gap: 16px;
+}
+.footer-icon-one {
+  width: 40px;
+  height: 40px;
+  margin-top: 16px;
+}
+.footer-icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: #434455;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icon-link:hover {
+  background-color: #31d0aa;
+}
+.footer-icon-link:focus {
+  background-color: #31d0aa;
+}
+.footer-icon {
+  fill: #f4f4fd;
 }
 .border {
   border-bottom: 1px solid #e7e9fc;
