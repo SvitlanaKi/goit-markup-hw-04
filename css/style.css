@@ -147,7 +147,7 @@ body {
     ),
     url(../images/peopleoffice.jpg);
   background-repeat: no-repeat;
-  background-size: color;
+  background-size: cover;
 }
 
 .main-first {
@@ -339,18 +339,11 @@ body {
   fill: currentColor;
 }
 .company-href:focus {
-  border-color: #404bbf;
+  color: #404bbf;
 }
 .company-href:hover {
-  border-color: #404bbf;
+  color: #404bbf;
 }
-.logo-company-icon:hover {
-  fill: #404bbf;
-}
-.logo-company-icon:focus {
-  fill: #404bbf;
-}
-
 /*---------кнопки портфоліо------*/
 .portfolio {
   position: absolute;
@@ -408,11 +401,11 @@ body {
   display: block;
   text-decoration: none;
 }
-.images-photo:hover {
+.portfolio-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.images-photo:focus {
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
